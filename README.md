@@ -1,0 +1,2 @@
+# orbstack
+Ubuntu Orbstack configuration
