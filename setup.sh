@@ -16,4 +16,3 @@ export PATH="$GUIX_PROFILE/bin:$PATH"
 export INFOPATH="$GUIX_PROFILE/share/info:$INFOPATH"
 export MANPATH="$GUIX_PROFILE/share/man:$MANPATH"
 guix pull -C channels.scm --url=https://codeberg.org/guix/guix-mirror
-guix describe
