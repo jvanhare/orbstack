@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Installing standard packages.
-sudo apt-get install --yes neofetch zsh git wget curl jq guix build-essential bsdmainutils
+sudo apt-get install --yes neofetch zsh git wget curl jq uidmap build-essential bsdmainutils cmake guix
 sudo apt-get update --yes
 
 # Installing dotfiles.
@@ -10,6 +10,4 @@ cd $HOME && yes | sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply --ssh jva
 $HOME/bin/chezmoi update --force
 
 # Updating guix.
-guix pull
-guix install glibc-locales
-guix package -u
+guix pull -C channels.scm --url=https://codeberg.org/guix/guix-mirror
