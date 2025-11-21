@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Installing standard packages.
-sudo apt-get install --yes neofetch zsh git wget curl jq guix
+sudo apt-get install --yes neofetch zsh git wget curl jq guix build-essential bsdmainutils
 sudo apt-get update --yes
 
 # Installing dotfiles.
